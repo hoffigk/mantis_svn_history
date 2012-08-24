@@ -42,7 +42,6 @@ $items = array();
 
 if ($mantis_ticket_number !== null)
 {
-    #$mantis_svn_history_xml_repository = new MantisSvnHistoryXmlRepository('https://subversion.exozet.com:28888/svn/orf/trunk');
     $mantis_svn_history_sqlite_repository = new MantisSvnHistorySqliteRepository($svn_repository_url);
     
     $mantis_svn_service = new MantisSvnHistoryService($mantis_svn_history_sqlite_repository);
